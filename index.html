@@ -14,6 +14,7 @@
     *{
       box-sizing: border-box;
       margin:0;
+      font-size: 16px;
     }
     main{
       display: flex;
@@ -25,46 +26,60 @@
     }
     main section{
       max-width: 400px;
+      width: 100%;
     }
     .overall{
-      background-color: red;
-      width: 100%;
-      height: 50%;
+      background: linear-gradient(to top, hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+      flex: 1 1 auto;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       text-align: center;
-      gap:5px
+      gap:5px;
+      border-radius: 0px 0px 35px 35px;
+      padding-bottom: 1.5rem;
     }
     #o-title{
       flex: 1;
-      width: 100%;
-      background-color: blue;
+      width: 60%;
+      margin-top: 1.5rem;
+      color:hsl(241, 100%, 89%)
     }
     #circle{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       flex:3;
       width: 40%;
-      background-color: blue;
       clip-path: circle();
-
+      color:hsl(241, 100%, 89%);
+      background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+      margin-bottom: 1.5rem;
+    }
+    #circle span{
+      font-size: 3rem;
+      color: white;
     }
     .overall div:nth-child(3){
-      width: 100%;
+      color: white;
+      width: 60%;
       flex:2;
-      background-color: blue;
     }
+    .overall div:nth-child(3) p{
+      color:hsl(241, 100%, 89%);
+      margin-top: 0.5rem;
 
+    }
     .summary{
-      background-color: red;
-      width:100%;
-      height: 50%;
+      flex: 1 1 auto;
     }
 
     .summary h2{
-      background-color: black;
       width: 100%;
-      height: 10%;
+      margin: 1rem;
+      color: hsl(224, 30%, 27%);
     }
     #flex-box{
       display: flex;
@@ -73,19 +88,67 @@
       height: 90%;
       justify-content: space-around;
       align-items: center;
-      gap:1px
+      gap:10px
     }
     .item{
+      display: flex;
       background-color: blueviolet;
       width: 90%;
       height: 18%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 1rem;
+      border-radius: 0.75rem;
+    }
+    .item div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .item div h4{
+      display: inline;
+      margin-left:.5rem
+    }
+    .item p{
+      font-weight: 600;
+    }
+    .item p span{
+      color: rgba(1, 1, 1, 0.4);
     }
 
-
+    .react{
+      background-color: hsla(0, 100%, 67%, 0.1);
+    }
+    .react div{
+      color:hsla(0, 100%, 67%);
+    }
+    .mem{
+      background-color: hsla(39, 100%, 56%, 0.1);
+    }
+    .mem div{
+      color: hsla(39, 100%, 56%);
+    }
+    .verb{
+      background-color: hsla(166, 100%, 37%, 0.1);
+    }
+    .verb div{
+      color: hsla(166, 100%, 37%);
+    }
+    .visu{
+      background-color: hsla(234, 85%, 45%, 0.1);
+    }
+    .visu{
+      color: hsla(234, 85%, 45%);
+    }
     #button{
-      background-color: green;
-      height: 18%;
+      font-weight: 600px;
+      text-align: center;
+      color: white;
+      background-color:hsl(224, 30%, 27%);
       width: 90%;
+      border-radius: 2rem;
+      padding: 1rem 0;
+      margin-bottom: 1rem;
     }
 
   </style>
@@ -94,23 +157,48 @@
 <body>
   <main>
     <section class="overall">
-      <h3 id="o-title"></h3>
-      <div id="circle"></div>
+      <h3 id="o-title">Your Result</h3>
+      <div id="circle">  <span>76</span> of 100 </div>
       <div>
-        <h2></h2>
-        <p></p>
+        <h2>Great</h2>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
       </div>
     </section>
 
 
     <section class="summary">
-      <h2></h2>
+      <h2>Summary</h2>
       <div id="flex-box">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div id="button"></div>
+        <div class="item react">
+          <div>
+            <img src="./assets/images/icon-reaction.svg">
+            <h4>Reaction</h4>
+          </div>
+          <p class="scor">80<span> / 100</span></p>
+        </div>
+        <div class="item mem">
+          <div>
+            <img src="./assets/images/icon-memory.svg">
+            <h4>Memory</h4>
+          </div>
+          <p class="scor">92<span> / 100</span></p>
+        </div>
+        <div class="item verb">
+          <div>
+          <img src="./assets/images/icon-verbal.svg">
+          <h4>Verbal</h4>
+          </div>
+          <p class="scor">61<span> / 100</span></p>
+        </div>
+        <div class="item visu">
+          <div>
+            <img src="./assets/images/icon-visual.svg">
+            <h4>Visual</h4>
+          </div>
+          <p class="scor">72<span> / 100</span></p>
+        </div>
+
+        <div id="button">Continue</div>
       </div>
     </section>
   </main>

@@ -16,16 +16,16 @@
     *{
       box-sizing: border-box;
       margin:0;
-      font-size: 16px;
       font-family: 'Hanken Grotesk', sans-serif;
     }
     main{
+      font-size: 16px;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100vw;
       height: 100vh;
-      gap:10px
+      gap:2rem;
     }
     main section{
       max-width: 400px;
@@ -39,11 +39,12 @@
       justify-content: space-between;
       align-items: center;
       text-align: center;
-      gap:5px;
+      gap:1rem;
       border-radius: 0px 0px 35px 35px;
       padding-bottom: 1.5rem;
     }
     #o-title{
+      font-size: 1em;
       flex: 1;
       width: 60%;
       margin-top: 1.5rem;
@@ -60,7 +61,7 @@
       clip-path: circle();
       color:hsl(241, 100%, 89%);
       background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
-      margin-bottom: 1.5rem;
+      padding: 1.5em;
     }
     #circle span{
       font-weight: 800;
@@ -79,7 +80,7 @@
 
     }
     .overall div:nth-child(3) h2{
-      font-size:1.5rem;
+      font-size:1.25rem;
       font-weight: 500;
     }
     .summary{
@@ -87,8 +88,10 @@
     }
 
     .summary h2{
-      width: 100%;
+      width: 90%;
       color: hsl(224, 30%, 27%);
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
     }
     #flex-box{
       display: flex;
@@ -100,13 +103,12 @@
       gap:10px
     }
     .item{
+      font-size: 14px;
       display: flex;
-      background-color: blueviolet;
-      width: 90%;
-      height: 18%;
+      width: 85%;
       justify-content: space-between;
       align-items: center;
-      padding: 0px 1rem;
+      padding: 1em;
       border-radius: 0.75rem;
     }
     .item div{
@@ -150,14 +152,14 @@
       color: hsla(234, 85%, 45%);
     }
     #button{
+      font-size: 14px;
       font-weight: 600px;
       text-align: center;
       color: white;
       background-color:hsl(224, 30%, 27%);
-      width: 90%;
+      width: 85%;
       border-radius: 2rem;
-      padding: 1rem 0;
-      margin-bottom: 1rem;
+      padding: 1em 0;
     }
 
   </style>
@@ -176,8 +178,8 @@
 
 
     <section class="summary">
-      <h2>Summary</h2>
       <div id="flex-box">
+        <h2>Summary</h2>
         <div class="item react">
           <div>
             <img src="./assets/images/icon-reaction.svg">

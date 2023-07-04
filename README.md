@@ -37,10 +37,13 @@ Users should be able to:
 
 ### What I learned
 
-1.any margin with the elements that have vw , vh make scrollbar vertically and horizontally.
-2.the best way to align items with each other is use of flexbox
-3.start coding from overall structure to the details is really good approach vs get drown with details in first place
-4.I really need to practice. really!! :)
+1. any margin with the elements that have vw , vh make scrollbar vertically and horizontally.
+
+2. the best way to align items with each other is use of flexbox
+
+3. start coding from overall structure to the details is really good approach vs get drown with details in first place
+
+4. I really need to practice. really!! :)
 
 ### Continued development
 
